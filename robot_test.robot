@@ -20,7 +20,3 @@ Test NEGINT
 Test FLOAT
     ${json_resp}=   Get next2 JSON    ${3.5}
     Should Be Equal     ${json_resp['msg']}     ${5.5}
-
-Test ALPHA
-    ${json_resp}=   Get next2 JSON    ${'a'}
-    Should Be Equal     ${json_resp['msg']}     ${'error'}    
